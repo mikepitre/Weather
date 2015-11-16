@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,18 +18,91 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Austin_Texas_Sunset_Skyline_2011" translatesAutoresizingMaskIntoConstraints="NO" id="ROR-y5-mY7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nature-sky-field-path" translatesAutoresizingMaskIntoConstraints="NO" id="ZYj-aX-s3r">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-150" translatesAutoresizingMaskIntoConstraints="NO" id="KG0-fY-0NN">
+                                <rect key="frame" x="20" y="40" width="560" height="540"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-225" translatesAutoresizingMaskIntoConstraints="NO" id="ZNs-qy-5k0">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="540"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="GD7-4D-pow">
+                                                <rect key="frame" x="237" y="0.0" width="88" height="104"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noun_123389_cc" translatesAutoresizingMaskIntoConstraints="NO" id="9d4-Mj-iuo">
+                                                        <rect key="frame" x="28" y="0.0" width="31" height="36"/>
+                                                        <animations/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="31" id="DPC-UP-eWK"/>
+                                                            <constraint firstAttribute="height" constant="36" id="elE-QS-swx"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-12" translatesAutoresizingMaskIntoConstraints="NO" id="992-hb-Slx">
+                                                        <rect key="frame" x="0.0" y="41" width="88" height="63"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Austin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRO-Eg-ZnX">
+                                                                <rect key="frame" x="0.0" y="0.0" width="88" height="41"/>
+                                                                <animations/>
+                                                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="29"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Texas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7j-iH-VCd">
+                                                                <rect key="frame" x="0.0" y="29" width="88" height="34"/>
+                                                                <animations/>
+                                                                <fontDescription key="fontDescription" name="KohinoorBangla-Light" family="Kohinoor Bangla" pointSize="24"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <animations/>
+                                                    </stackView>
+                                                </subviews>
+                                                <animations/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="noG-Bp-lUq">
+                                                <rect key="frame" x="0.0" y="-121" width="560" height="661"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="noun_141502_cc" translatesAutoresizingMaskIntoConstraints="NO" id="Lyu-vl-dQW">
+                                                        <rect key="frame" x="0.0" y="208" width="268" height="245"/>
+                                                        <animations/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="245" id="whZ-ym-VOr"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="72°" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="50" translatesAutoresizingMaskIntoConstraints="NO" id="l0N-u7-GpK">
+                                                        <rect key="frame" x="293" y="208" width="268" height="245"/>
+                                                        <animations/>
+                                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="175"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstItem="l0N-u7-GpK" firstAttribute="centerY" secondItem="Lyu-vl-dQW" secondAttribute="centerY" id="sWU-F0-hOh"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                </subviews>
+                                <animations/>
+                            </stackView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ROR-y5-mY7" secondAttribute="bottom" id="3mK-C6-hQ9"/>
-                            <constraint firstItem="ROR-y5-mY7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Mr5-6Q-mwG"/>
-                            <constraint firstItem="ROR-y5-mY7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lHC-tc-5KK"/>
-                            <constraint firstAttribute="trailing" secondItem="ROR-y5-mY7" secondAttribute="trailing" id="rUr-oV-VcC"/>
+                            <constraint firstItem="ZYj-aX-s3r" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5wu-Ex-6Pw"/>
+                            <constraint firstItem="KG0-fY-0NN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6h3-fQ-K14"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZYj-aX-s3r" secondAttribute="bottom" id="GSq-xZ-XFs"/>
+                            <constraint firstAttribute="trailing" secondItem="ZYj-aX-s3r" secondAttribute="trailing" id="J62-5Q-th0"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="KG0-fY-0NN" secondAttribute="bottom" constant="20" id="KdZ-KH-nVh"/>
+                            <constraint firstItem="KG0-fY-0NN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="TTF-xt-KvZ"/>
+                            <constraint firstItem="ZYj-aX-s3r" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cbb-eb-fwh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KG0-fY-0NN" secondAttribute="trailing" id="fPm-oE-Kk2"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -38,6 +112,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Austin_Texas_Sunset_Skyline_2011" width="5435" height="3624"/>
+        <image name="nature-sky-field-path" width="6000" height="4000"/>
+        <image name="noun_123389_cc" width="461" height="607"/>
+        <image name="noun_141502_cc" width="545" height="548"/>
     </resources>
 </document>
