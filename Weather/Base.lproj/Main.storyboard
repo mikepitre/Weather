@@ -22,168 +22,210 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="9d4-Mj-iuo">
-                                <rect key="frame" x="285" y="20" width="31" height="36"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="2mq-Zv-XLR"/>
-                                    <constraint firstAttribute="width" constant="31" id="39Y-uH-xJ7"/>
-                                    <constraint firstAttribute="width" constant="31" id="DPC-UP-eWK"/>
-                                    <constraint firstAttribute="height" constant="36" id="elE-QS-swx"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="DPC-UP-eWK"/>
-                                        <exclude reference="elE-QS-swx"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Austin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRO-Eg-ZnX">
-                                <rect key="frame" x="256" y="50" width="88" height="41"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="88" id="atL-t9-zXd"/>
-                                    <constraint firstAttribute="height" constant="41" id="swA-eY-s9y"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="29"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Texas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7j-iH-VCd">
-                                <rect key="frame" x="270" y="81" width="60" height="34"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="PZw-HO-GHh"/>
-                                    <constraint firstAttribute="width" constant="60" id="R6N-Bx-C3c"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="KohinoorBangla-Light" family="Kohinoor Bangla" pointSize="24"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1H6-Av-IeB">
-                                <rect key="frame" x="20" y="123" width="560" height="208"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Gq5-K3-aFb">
+                                <rect key="frame" x="20" y="20" width="560" height="369"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partlycloudy" translatesAutoresizingMaskIntoConstraints="NO" id="Lyu-vl-dQW">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="208"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="NqE-dg-fgS">
+                                        <rect key="frame" x="236" y="0.0" width="88" height="86"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="9d4-Mj-iuo">
+                                                <rect key="frame" x="29" y="0.0" width="31" height="36"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="2mq-Zv-XLR"/>
+                                                    <constraint firstAttribute="width" constant="31" id="39Y-uH-xJ7"/>
+                                                    <constraint firstAttribute="width" constant="31" id="DPC-UP-eWK"/>
+                                                    <constraint firstAttribute="height" constant="36" id="elE-QS-swx"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="DPC-UP-eWK"/>
+                                                        <exclude reference="elE-QS-swx"/>
+                                                    </mask>
+                                                </variation>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-15" translatesAutoresizingMaskIntoConstraints="NO" id="16O-qF-CAJ">
+                                                <rect key="frame" x="0.0" y="26" width="88" height="60"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Austin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRO-Eg-ZnX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="88" height="41"/>
+                                                        <animations/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="88" id="atL-t9-zXd"/>
+                                                            <constraint firstAttribute="height" constant="41" id="swA-eY-s9y"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="29"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Texas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7j-iH-VCd">
+                                                        <rect key="frame" x="0.0" y="26" width="88" height="34"/>
+                                                        <animations/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="34" id="PZw-HO-GHh"/>
+                                                            <constraint firstAttribute="width" constant="60" id="R6N-Bx-C3c"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="KohinoorBangla-Light" family="Kohinoor Bangla" pointSize="24"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="88" id="bMI-et-IaH"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="1H6-Av-IeB">
+                                        <rect key="frame" x="0.0" y="106" width="560" height="208"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partlycloudy" translatesAutoresizingMaskIntoConstraints="NO" id="Lyu-vl-dQW">
+                                                <rect key="frame" x="0.0" y="0.0" width="255" height="208"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="278" id="Kt1-ZA-GKP"/>
+                                                    <constraint firstAttribute="height" constant="208" id="ZU5-aR-AXN">
+                                                        <variation key="heightClass=compact" constant="100"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" constant="281" id="csN-Gg-F43">
+                                                        <variation key="heightClass=compact" constant="150"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="height" constant="208" id="jGI-VL-LWn"/>
+                                                    <constraint firstAttribute="height" constant="245" id="whZ-ym-VOr"/>
+                                                    <constraint firstAttribute="width" constant="226" id="wql-ey-hLf"/>
+                                                    <constraint firstAttribute="height" constant="208" id="zqM-yY-EzT"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="Kt1-ZA-GKP"/>
+                                                        <exclude reference="jGI-VL-LWn"/>
+                                                        <exclude reference="whZ-ym-VOr"/>
+                                                        <exclude reference="wql-ey-hLf"/>
+                                                        <exclude reference="zqM-yY-EzT"/>
+                                                    </mask>
+                                                </variation>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="72°" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="50" translatesAutoresizingMaskIntoConstraints="NO" id="l0N-u7-GpK">
+                                                <rect key="frame" x="305" y="0.0" width="255" height="208"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="175"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="4Pl-WN-oP3">
+                                        <rect key="frame" x="60" y="334" width="440" height="35"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vCr-3H-QTf">
+                                                <rect key="frame" x="0.0" y="0.0" width="220" height="35"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="humidity" translatesAutoresizingMaskIntoConstraints="NO" id="dGh-mu-j8r">
+                                                        <rect key="frame" x="0.0" y="0.0" width="110" height="35"/>
+                                                        <animations/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="44" id="Pez-Nc-nsZ"/>
+                                                            <constraint firstAttribute="height" constant="49" id="Scf-ME-IV8"/>
+                                                        </constraints>
+                                                        <variation key="default">
+                                                            <mask key="constraints">
+                                                                <exclude reference="Pez-Nc-nsZ"/>
+                                                                <exclude reference="Scf-ME-IV8"/>
+                                                            </mask>
+                                                        </variation>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAj-8k-U9R">
+                                                        <rect key="frame" x="110" y="1" width="110" height="34"/>
+                                                        <animations/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="96" id="POr-a3-kZW"/>
+                                                            <constraint firstAttribute="height" constant="60" id="pic-YT-kNI"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="KohinoorBangla-Light" family="Kohinoor Bangla" pointSize="24"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="default">
+                                                            <mask key="constraints">
+                                                                <exclude reference="POr-a3-kZW"/>
+                                                                <exclude reference="pic-YT-kNI"/>
+                                                            </mask>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                                <animations/>
+                                                <variation key="heightClass=compact" spacing="-30"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gd0-rD-sed">
+                                                <rect key="frame" x="220" y="0.0" width="220" height="34"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wind" translatesAutoresizingMaskIntoConstraints="NO" id="J9h-Mh-1ca">
+                                                        <rect key="frame" x="0.0" y="5" width="110" height="25"/>
+                                                        <animations/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="6KH-LM-gik"/>
+                                                            <constraint firstAttribute="height" constant="33" id="Kyo-LB-MlW"/>
+                                                            <constraint firstAttribute="width" constant="110" id="WUy-81-CoE"/>
+                                                            <constraint firstAttribute="width" constant="49" id="g09-Xs-bve"/>
+                                                        </constraints>
+                                                        <variation key="default">
+                                                            <mask key="constraints">
+                                                                <exclude reference="Kyo-LB-MlW"/>
+                                                                <exclude reference="g09-Xs-bve"/>
+                                                            </mask>
+                                                        </variation>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 mph" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Bv-jk-7MM">
+                                                        <rect key="frame" x="110" y="0.0" width="110" height="34"/>
+                                                        <animations/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="Rqp-Xe-bsy"/>
+                                                            <constraint firstAttribute="width" constant="66" id="f4l-Hw-Tbr"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="KohinoorBangla-Light" family="Kohinoor Bangla" pointSize="24"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="default">
+                                                            <mask key="constraints">
+                                                                <exclude reference="Rqp-Xe-bsy"/>
+                                                                <exclude reference="f4l-Hw-Tbr"/>
+                                                            </mask>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                                <animations/>
+                                                <variation key="heightClass=compact" spacing="-20"/>
+                                            </stackView>
+                                        </subviews>
                                         <animations/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="278" id="Kt1-ZA-GKP"/>
-                                            <constraint firstAttribute="height" constant="208" id="ZU5-aR-AXN"/>
-                                            <constraint firstAttribute="width" constant="281" id="csN-Gg-F43"/>
-                                            <constraint firstAttribute="height" constant="208" id="jGI-VL-LWn"/>
-                                            <constraint firstAttribute="height" constant="245" id="whZ-ym-VOr"/>
-                                            <constraint firstAttribute="width" constant="226" id="wql-ey-hLf"/>
-                                            <constraint firstAttribute="height" constant="208" id="zqM-yY-EzT"/>
+                                            <constraint firstItem="gd0-rD-sed" firstAttribute="trailing" secondItem="4Pl-WN-oP3" secondAttribute="trailingMargin" id="ITR-p9-YBc"/>
+                                            <constraint firstAttribute="width" constant="200" id="pZF-m2-8XH"/>
+                                            <constraint firstItem="gd0-rD-sed" firstAttribute="leading" secondItem="vCr-3H-QTf" secondAttribute="trailing" id="wlm-Re-RVy"/>
+                                            <constraint firstAttribute="height" constant="35" id="yNe-ng-PDh"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="Kt1-ZA-GKP"/>
-                                                <exclude reference="jGI-VL-LWn"/>
-                                                <exclude reference="whZ-ym-VOr"/>
-                                                <exclude reference="wql-ey-hLf"/>
-                                                <exclude reference="zqM-yY-EzT"/>
+                                                <exclude reference="pZF-m2-8XH"/>
+                                                <exclude reference="ITR-p9-YBc"/>
                                             </mask>
                                         </variation>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="72°" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="50" translatesAutoresizingMaskIntoConstraints="NO" id="l0N-u7-GpK">
-                                        <rect key="frame" x="280" y="0.0" width="280" height="208"/>
-                                        <animations/>
-                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="175"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <animations/>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="4Pl-WN-oP3">
-                                <rect key="frame" x="40" y="339" width="520" height="35"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vCr-3H-QTf">
-                                        <rect key="frame" x="0.0" y="0.0" width="260" height="35"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="humidity" translatesAutoresizingMaskIntoConstraints="NO" id="dGh-mu-j8r">
-                                                <rect key="frame" x="0.0" y="0.0" width="130" height="35"/>
-                                                <animations/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="44" id="Pez-Nc-nsZ"/>
-                                                    <constraint firstAttribute="height" constant="49" id="Scf-ME-IV8"/>
-                                                </constraints>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="Pez-Nc-nsZ"/>
-                                                        <exclude reference="Scf-ME-IV8"/>
-                                                    </mask>
-                                                </variation>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="60%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAj-8k-U9R">
-                                                <rect key="frame" x="130" y="0.0" width="130" height="35"/>
-                                                <animations/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="96" id="POr-a3-kZW"/>
-                                                    <constraint firstAttribute="height" constant="60" id="pic-YT-kNI"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="KohinoorBangla-Light" family="Kohinoor Bangla" pointSize="24"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="POr-a3-kZW"/>
-                                                        <exclude reference="pic-YT-kNI"/>
-                                                    </mask>
-                                                </variation>
-                                            </label>
-                                        </subviews>
-                                        <animations/>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gd0-rD-sed">
-                                        <rect key="frame" x="260" y="0.0" width="260" height="35"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wind" translatesAutoresizingMaskIntoConstraints="NO" id="J9h-Mh-1ca">
-                                                <rect key="frame" x="0.0" y="0.0" width="130" height="35"/>
-                                                <animations/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="33" id="Kyo-LB-MlW"/>
-                                                    <constraint firstAttribute="width" constant="49" id="g09-Xs-bve"/>
-                                                </constraints>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="Kyo-LB-MlW"/>
-                                                        <exclude reference="g09-Xs-bve"/>
-                                                    </mask>
-                                                </variation>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 mph" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Bv-jk-7MM">
-                                                <rect key="frame" x="130" y="0.0" width="130" height="35"/>
-                                                <animations/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="Rqp-Xe-bsy"/>
-                                                    <constraint firstAttribute="width" constant="66" id="f4l-Hw-Tbr"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="KohinoorBangla-Light" family="Kohinoor Bangla" pointSize="24"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="Rqp-Xe-bsy"/>
-                                                        <exclude reference="f4l-Hw-Tbr"/>
-                                                    </mask>
-                                                </variation>
-                                            </label>
-                                        </subviews>
-                                        <animations/>
                                     </stackView>
                                 </subviews>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstItem="gd0-rD-sed" firstAttribute="trailing" secondItem="4Pl-WN-oP3" secondAttribute="trailingMargin" id="ITR-p9-YBc"/>
-                                    <constraint firstAttribute="width" constant="200" id="pZF-m2-8XH"/>
-                                    <constraint firstItem="gd0-rD-sed" firstAttribute="leading" secondItem="vCr-3H-QTf" secondAttribute="trailing" id="wlm-Re-RVy"/>
-                                    <constraint firstAttribute="height" constant="35" id="yNe-ng-PDh"/>
+                                    <constraint firstItem="4Pl-WN-oP3" firstAttribute="width" secondItem="1H6-Av-IeB" secondAttribute="width" id="p1h-rT-VE8"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="pZF-m2-8XH"/>
-                                        <exclude reference="ITR-p9-YBc"/>
+                                        <exclude reference="p1h-rT-VE8"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact" spacing="10">
+                                    <mask key="constraints">
+                                        <include reference="p1h-rT-VE8"/>
                                     </mask>
                                 </variation>
                             </stackView>
@@ -191,23 +233,15 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4Pl-WN-oP3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="2on-5J-e1g"/>
-                            <constraint firstItem="1H6-Av-IeB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5aO-aT-IQO"/>
                             <constraint firstItem="ZYj-aX-s3r" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5wu-Ex-6Pw"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="1H6-Av-IeB" secondAttribute="trailing" id="9Y0-mU-isV"/>
-                            <constraint firstItem="9d4-Mj-iuo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AKj-1m-9ay"/>
+                            <constraint firstItem="Gq5-K3-aFb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="CZp-Jz-ghd"/>
                             <constraint firstAttribute="trailing" secondItem="ZYj-aX-s3r" secondAttribute="trailing" id="J62-5Q-th0"/>
-                            <constraint firstItem="1H6-Av-IeB" firstAttribute="top" secondItem="W7j-iH-VCd" secondAttribute="bottom" constant="8" id="JoC-xJ-1hZ"/>
-                            <constraint firstItem="ZRO-Eg-ZnX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sti-tW-5HO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gq5-K3-aFb" secondAttribute="trailing" id="OzI-D3-HNw"/>
                             <constraint firstItem="ZYj-aX-s3r" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cbb-eb-fwh"/>
-                            <constraint firstItem="W7j-iH-VCd" firstAttribute="top" secondItem="9d4-Mj-iuo" secondAttribute="bottom" constant="25" id="d4o-6o-2VX"/>
-                            <constraint firstItem="4Pl-WN-oP3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="exP-iu-I3f"/>
-                            <constraint firstItem="W7j-iH-VCd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iqM-al-tyw"/>
-                            <constraint firstItem="4Pl-WN-oP3" firstAttribute="top" secondItem="1H6-Av-IeB" secondAttribute="bottom" constant="8" id="kl0-pH-ASi"/>
+                            <constraint firstItem="Gq5-K3-aFb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="iAS-eZ-8yd">
+                                <variation key="heightClass=compact" constant="8"/>
+                            </constraint>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZYj-aX-s3r" secondAttribute="bottom" id="nSN-KT-ZiN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4Pl-WN-oP3" secondAttribute="trailing" constant="20" id="rHq-Gb-fCF"/>
-                            <constraint firstItem="ZRO-Eg-ZnX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="vbY-EY-4Ur"/>
-                            <constraint firstItem="9d4-Mj-iuo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="voM-W5-8X4"/>
                         </constraints>
                     </view>
                 </viewController>
