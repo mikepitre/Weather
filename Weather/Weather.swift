@@ -38,7 +38,36 @@ class Weather
 
     func getWeather(completed: DownloadComplete)
         {
-        
+        let url = "\(OPEN_WEATHER_URL)\(AUSTIN_ID)\(OPEN_WEATHER_KEY)"
+        Alamofire.request(.GET, url).responseJSON
+            {
+            response in
+            let result = response.result
+            if let dict = result.value as? Dictionary<String, AnyObject>
+                {
+                if let condition = dict["weather"]![0]["main"] as? String
+                    {
+                    self._condition = condition.lowercaseString
+                    print(self._condition)
+                    }
+                if let temp = dict["main"]!["temp"] as? Int
+                    {
+                    self._temp = "\(temp)"
+                    print(self._temp)
+                    }
+                if let humidity = dict["main"]!["humidity"] as? Int
+                    {
+                    self._humidity = "\(humidity)"
+                    print(self._humidity)
+                    }
+                if let wind = dict["wind"]!["speed"] as? Int
+                    {
+                    self._wind = "\(wind)"
+                    print(self._wind)
+                    }
+                }
+                completed()
+            }
         }
 
 }
