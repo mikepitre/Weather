@@ -61,6 +61,7 @@ class ViewController: UIViewController
         {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
         }
 
     override func didReceiveMemoryWarning()
